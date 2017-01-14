@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Beta>False</Beta>
+  <Category>Chat</Category>
+  <Name>Mattermost App Backend</Name>
+  <Description>
+    Part two of three mattermost chat
+  </Description>
+  <Registry>https://hub.docker.com/u/mattermost/</Registry>
+  <GitHub>https://github.com/mattermost/mattermost-docker</GitHub>
+  <Repository>mattermost/mattermost-prod-app</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment>
+    <Variable>
+      <Name>APP_UID</Name>
+      <Value>99</Value>
+    </Variable>
+    <Variable>
+      <Name>APP_GID</Name>
+      <Value>100</Value>
+    </Variable>
+	<Variable>
+      <Name>--link</Name>
+      <Value>Mattermost-DB</Value>
+    </Variable>
+	
+  </Environment>
+  <Networking>
+  
+    </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/Docker/MM/db/data</HostDir>
+      <ContainerDir>/var/lib/postgresql/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+	<Volume>
+      <HostDir>/mnt/user/Docker/MM/app/config</HostDir>
+      <ContainerDir>/mattermost/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+	<Volume>
+      <HostDir>/mnt/user/Docker/MM/app/data</HostDir>
+      <ContainerDir>/mattermost/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI>http://[IP]:[PORT:8065]/</WebUI>
+  <Banner>http://www.mattermost.org/wp-content/uploads/2016/03/logoHorizontal.png</Banner>
+  <Icon>http://www.mattermost.org/wp-content/uploads/2016/04/icon.png</Icon>
+</Container>
