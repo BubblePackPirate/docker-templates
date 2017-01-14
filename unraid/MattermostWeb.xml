@@ -4,7 +4,7 @@
   <Category>Chat</Category>
   <Name>Mattermost Web Frontend</Name>
   <Description>
-    Part one of three mattermost chat etc 
+    Part one of three mattermost chat 
   </Description>
   <Registry>https://hub.docker.com/u/mattermost/</Registry>
   <GitHub>https://github.com/mattermost/mattermost-docker</GitHub>
@@ -22,7 +22,7 @@
     </Variable>
   </Environment>
   <Networking>
-    <Mode>bridge</Mode>
+    <Mode>host</Mode>
     <Publish>
       <Port>
         <HostPort>8065</HostPort>
