@@ -20,6 +20,10 @@
       <Name>APP_GID</Name>
       <Value>100</Value>
     </Variable>
+        <Variable>
+      <Name>--link</Name>
+      <Value>Mattermost App Backend</Value>
+    </Variable>
   </Environment>
   <Networking>
     <Mode>host</Mode>
