@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Beta>False</Beta>
+  <Category>Chat</Category>
+  <Name>Mattermost Web Frontend</Name>
+  <Description>
+    Part one of three mattermost chat etc 
+  </Description>
+  <Registry>https://hub.docker.com/u/mattermost/</Registry>
+  <GitHub>https://github.com/mattermost/mattermost-docker</GitHub>
+  <Repository>mattermost/mattermost-prod-web</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment>
+    <Variable>
+      <Name>APP_UID</Name>
+      <Value>99</Value>
+    </Variable>
+    <Variable>
+      <Name>APP_GID</Name>
+      <Value>100</Value>
+    </Variable>
+  </Environment>
+  <Networking>
+    <Mode>host</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8065</HostPort>
+        <ContainerPort>8065</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    
+  </Data>
+  <WebUI>http://[IP]:[PORT:8065]/</WebUI>
+  <Banner>http://www.mattermost.org/wp-content/uploads/2016/03/logoHorizontal.png</Banner>
+  <Icon>http://www.mattermost.org/wp-content/uploads/2016/04/icon.png</Icon>
+</Container>
