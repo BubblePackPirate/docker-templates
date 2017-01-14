@@ -20,10 +20,6 @@
       <Name>APP_GID</Name>
       <Value>100</Value>
     </Variable>
-        <Variable>
-      <Name>--link</Name>
-      <Value>Mattermost App Backend</Value>
-    </Variable>
   </Environment>
   <Networking>
     <Mode>host</Mode>
@@ -35,10 +31,9 @@
       </Port>
     </Publish>
   </Networking>
-  <Data>
-    
-  </Data>
+  <Data> </Data>
   <WebUI>http://[IP]:[PORT:8065]/</WebUI>
-  <Banner>http://www.mattermost.org/wp-content/uploads/2016/03/logoHorizontal.png</Banner>
+  <Banner></Banner>
   <Icon>http://www.mattermost.org/wp-content/uploads/2016/04/icon.png</Icon>
+  <ExtraParams>--link Mattermost App Backend</ExtraParams>
 </Container>
