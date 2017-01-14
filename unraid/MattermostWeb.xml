@@ -22,7 +22,7 @@
     </Variable>
   </Environment>
   <Networking>
-    <Mode>bridge</Mode>
+    <Mode>mm</Mode>
     <Publish>
       <Port>
         <HostPort>8065</HostPort>
@@ -35,5 +35,5 @@
   <WebUI>http://[IP]:[PORT:8065]/</WebUI>
   <Banner></Banner>
   <Icon>http://www.mattermost.org/wp-content/uploads/2016/04/icon.png</Icon>
-  <ExtraParams>--link MattermostAppBackend</ExtraParams>
+  <ExtraParams></ExtraParams>
 </Container>
