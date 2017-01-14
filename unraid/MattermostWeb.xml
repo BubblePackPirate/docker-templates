@@ -35,5 +35,5 @@
   <WebUI>http://[IP]:[PORT:8065]/</WebUI>
   <Banner></Banner>
   <Icon>http://www.mattermost.org/wp-content/uploads/2016/04/icon.png</Icon>
-  <ExtraParams>--link Mattermost App Backend</ExtraParams>
+  <ExtraParams>--link Mattermost-App</ExtraParams>
 </Container>
