@@ -22,7 +22,7 @@
     </Variable>
   </Environment>
   <Networking>
-    <Mode>host</Mode>
+    <Mode>bridge</Mode>
     <Publish>
       <Port>
         <HostPort>8065</HostPort>
